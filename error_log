@@ -1,0 +1,9 @@
+[04-Sep-2018 04:50:34 UTC] PHP Warning:  file_get_contents(): SSL: Connection reset by peer in /home/nilsphot/public_html/service/ImportInsta.php on line 17
+[04-Sep-2018 04:51:04 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/nilsphot/public_html/service/ImportInsta.php on line 26
+[11-Sep-2018 14:43:12 UTC] PHP Warning:  file_get_contents(https://api.instagram.com/v1/users/self/media/recent/?access_token=8432941306.1e7d96f.0f686a0542264ab0a9abcf4aebe3e8c6): failed to open stream: Connection timed out in /home/nilsphot/public_html/service/ImportInsta.php on line 17
+[11-Sep-2018 14:43:42 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/nilsphot/public_html/service/ImportInsta.php on line 26
+[11-Sep-2018 21:29:44 UTC] PHP Warning:  file_get_contents(): SSL: Connection reset by peer in /home/nilsphot/public_html/service/ImportInsta.php on line 17
+[11-Sep-2018 21:30:14 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/nilsphot/public_html/service/ImportInsta.php on line 26
+[19-Sep-2018 23:21:53 UTC] PHP Warning:  file_get_contents(): SSL: Connection reset by peer in /home/nilsphot/public_html/service/ImportInsta.php on line 17
+[19-Sep-2018 23:22:23 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/nilsphot/public_html/service/ImportInsta.php on line 25
+[23-Sep-2018 00:49:22 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/nilsphot/public_html/service/ImportInsta.php on line 25
