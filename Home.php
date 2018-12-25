@@ -2,7 +2,7 @@
 require_once($_SERVER['DOCUMENT_ROOT']."/service/ImportInsta.php"); 
 require_once($_SERVER['DOCUMENT_ROOT']."/service/LoadContent.php"); 
 if (empty($_POST)){
-    header("Location: index");
+    header("Location: index.php");
     die();
 }
 $import = new ImportInstagramProfile();
