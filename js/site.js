@@ -39,7 +39,7 @@ function getImageContent(){
             for(var i=0; i<data['data'].length; i++){
                 form += '<input type="hidden" name="'+data['data'][i]['category']+'" value="'+data['data'][i]['images'][0]['url']+'">';
             }
-            var redirect = 'Home';
+            var redirect = 'Home.php';
             $('<form action="'+redirect+'" method="POST">'+form+'</form>').appendTo('body').submit();
             
             
