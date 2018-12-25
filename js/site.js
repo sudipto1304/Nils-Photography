@@ -14,7 +14,7 @@ function sendEmail(){
         return;
     }
   
-    $.ajax('service/sendQuery', {
+    $.ajax('service/sendQuery.php', {
         type: 'POST', 
         data: { name: name, email: email, mobile: mobile, message: message },  
         success: function (data, status, xhr) {
