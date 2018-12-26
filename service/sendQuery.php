@@ -12,7 +12,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     die();
 }else{
     $sendMail->send($name, $email, $contact, $message);
-    echo "We received your message";
+    
 }
 
 

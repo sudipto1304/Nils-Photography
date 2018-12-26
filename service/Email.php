@@ -26,7 +26,7 @@ class Email{
             exit;
         }
 
-        echo "Message has been sent";
+        echo "We received your message";
 
 
         // $from = "noreply@nils-photography.com"; // this is the sender's Email address
