@@ -1,5 +1,5 @@
 <?php
-require("class.PHPMailer.php");
+require("../PHPMailer_5.2.0/class.PHPMailer.php");
 class Email{
     public function send($name, $email, $phone, $message){
         $from = "noreply@nils-photography.com"; // this is the sender's Email address
