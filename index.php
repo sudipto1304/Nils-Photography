@@ -37,10 +37,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TS7XH4Q');</script>
 <!-- End Google Tag Manager -->
 
-        <link rel="icon" href="img/favicon.png" type="image/png">
+        <link rel="icon" href="img/favicon.png?rev=001" type="image/png">
         <title>Nils Photography</title>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css" as="style">
+        <link rel="stylesheet" href="css/bootstrap.css?rev=001" as="style">
     
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?rev=001" as="style">
         <link rel="stylesheet" href="css/style.css?rev=001" as="style">
@@ -87,7 +87,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						<p>I’m a Canon camera lover. But my specialty is 35mm film photography. I love to capture street events, natual beauty. Photography has taken me those places I never thought I'd go. 
 							</p>
 						
-						<h1 style="float: right; margin-bottom: 10px;"> <img src="img/signature.png"/></h1>
+						<h1 style="float: right; margin-bottom: 10px;"> <img src="img/signature.png?rev=001"/></h1>
 						
 					</div>
 				</div>
