@@ -11,7 +11,7 @@ class ImportInstagramProfile{
     public function getInstagramPics(){
         $response = array();
         $indexCount=0;
-        $access_token = "8432941306.1e7d96f.0f686a0542264ab0a9abcf4aebe3e8c6";
+        $access_token = "8432941306.1677ed0.24d906aefd5d4ea0847a901131f00878";
         $json_link = "https://api.instagram.com/v1/users/self/media/recent/?";
         $json_link .="access_token={$access_token}";
         $jsonStrig = file_get_contents($json_link);
