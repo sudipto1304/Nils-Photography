@@ -401,8 +401,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </body>
 
 <script>
-var host = '<?php echo HOST ?>';
-getImageContent();
+    var host = '<?php echo HOST ?>';
+    $(document).ready(function(){
+        
+        getImageContent();
+    });
+
 </script>
 
 
