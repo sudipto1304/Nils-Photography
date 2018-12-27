@@ -40,14 +40,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <link rel="icon" href="img/favicon.png" type="image/png">
         <title>Nils Photography</title>
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/bootstrap.css" as="style">
+    
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
+        <link rel="stylesheet" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/responsive.css" as="style">
     </head>
     <body>
         
@@ -388,16 +385,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-		<script src="js/stellar.js"></script>
-		<script src="js/site.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
+        <script rel="preload" src="js/jquery-3.2.1.min.js"></script>
+        <script rel="preload" src="js/popper.js"></script>
+        <script rel="preload" src="js/bootstrap.min.js"></script>
+		<script rel="preload" src="js/stellar.js"></script>
+		<script rel="preload" src="js/site.js"></script>
+        <script rel="preload" src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script rel="preload" src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script rel="preload" src="js/jquery.ajaxchimp.min.js"></script>
+        <script rel="preload" src="js/mail-script.js"></script>
+        <script rel="preload" src="js/theme.js"></script>
     </body>
 
 <script>
