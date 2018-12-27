@@ -37,11 +37,13 @@ function getImageContent(){
         success: function (data) {
             var form = '';
             for(var i=0; i<data['data'].length; i++){
-                form += '<input type="hidden" name="'+data['data'][i]['category']+'" value="'+data['data'][i]['images'][0]['url']+'">';
-            }
-            var redirect = 'Home.php';
-            $('<form action="'+redirect+'" method="POST">'+form+'</form>').appendTo('body').submit();
-            
+                if(data['data'][i]['category']=="COVER_HEADER"){
+                    $('#COVER_HEADER').css('background-image', 'url(' + data['data'][i]['images'][0]['url'] + ')');
+                }else{
+                    $('#'+data['data'][i]['category']).attr('src', data['data'][i]['images'][0]['url']);
+                    $('#'+data['data'][i]['category']+"_LIGHT").attr('href', data['data'][i]['images'][0]['url']);
+                }
+            }            
             
         },
         error: function (e) {
