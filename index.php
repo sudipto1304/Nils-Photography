@@ -42,9 +42,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css" as="style">
     
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
-        <link rel="stylesheet" href="css/style.css" as="style">
-        <link rel="stylesheet" href="css/responsive.css" as="style">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?rev=001" as="style">
+        <link rel="stylesheet" href="css/style.css?rev=001" as="style">
+        <link rel="stylesheet" href="css/responsive.css?rev=001" as="style">
     </head>
     <body>
         
@@ -385,16 +385,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script rel="preload" src="js/jquery-3.2.1.min.js"></script>
-        <script rel="preload" src="js/popper.js"></script>
-        <script rel="preload" src="js/bootstrap.min.js"></script>
-		<script rel="preload" src="js/stellar.js"></script>
-		<script rel="preload" src="js/site.js"></script>
-        <script rel="preload" src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script rel="preload" src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script rel="preload" src="js/jquery.ajaxchimp.min.js"></script>
-        <script rel="preload" src="js/mail-script.js"></script>
-        <script rel="preload" src="js/theme.js"></script>
+        <script rel="preload" src="js/jquery-3.2.1.min.js?rev=001"></script>
+        <script rel="preload" src="js/popper.js?rev=001"></script>
+        <script rel="preload" src="js/bootstrap.min.js?rev=001"></script>
+		<script rel="preload" src="js/stellar.js?rev=001"></script>
+		<script rel="preload" src="js/site.js?rev=001"></script>
+        <script rel="preload" src="js/jquery.ajaxchimp.min.js?rev=001"></script>
+        <script rel="preload" src="js/mail-script.js?rev=001"></script>
+        <script rel="preload" src="js/theme.js?rev=001"></script>
     </body>
 
 <script>
