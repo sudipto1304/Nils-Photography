@@ -29,19 +29,19 @@ function sendEmail(){
 function getImageContent(){
     $.ajax({
         type: "GET",
-        url: host+"/dashboard/getContent",
+        url: host+"/data/image/getContent",
         contentType: false,
         processData: false,
         cache: false,
         timeout: 600000,
         success: function (data) {
             var form = '';
-            for(var i=0; i<data['data'].length; i++){
-                if(data['data'][i]['category']=="COVER_HEADER"){
-                    $('#COVER_HEADER').css('background-image', 'url(' + data['data'][i]['images'][0]['url'] + ')');
+            for(var i=0; i<data.length; i++){
+                if(data[i]=="COVER_HEADER"){
+                    $('#COVER_HEADER').css('background-image', 'url(' + data[i][0]['url'] + ')');
                 }else{
-                    $('#'+data['data'][i]['category']).attr('src', data['data'][i]['images'][0]['url']);
-                    $('#'+data['data'][i]['category']+"_LIGHT").attr('href', data['data'][i]['images'][0]['url']);
+                    $('#'+data[i]).attr('src', data[i][0]['url']);
+                    $('#'+data[i]+"_LIGHT").attr('href', data[i][0]['url']);
                 }
             }            
             
