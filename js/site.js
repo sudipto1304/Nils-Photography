@@ -37,11 +37,11 @@ function getImageContent(){
         success: function (data) {
             var form = '';
             for(var i=0; i<data.length; i++){
-                if(data[i]=="COVER_HEADER"){
-                    $('#COVER_HEADER').css('background-image', 'url(' + data[i][0]['url'] + ')');
+                if(data[i]["category"]=="COVER_HEADER"){
+                    $('#COVER_HEADER').css('background-image', 'url(' + data[i]["images"][0]['url'] + ')');
                 }else{
-                    $('#'+data[i]).attr('src', data[i][0]['url']);
-                    $('#'+data[i]+"_LIGHT").attr('href', data[i][0]['url']);
+                    $('#'+data[i]["category"]).attr('src', data[i]["images"][0]['url']);
+                    $('#'+data[i]["category"]+"_LIGHT").attr('href', data[i]["images"][0]['url']);
                 }
             }            
             
