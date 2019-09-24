@@ -7,6 +7,7 @@ require_once($_SERVER['DOCUMENT_ROOT']."/service/LoadContent.php");
 }*/
 $import = new ImportInstagramProfile();
 $data=json_decode($import->getInstagramPics());
+
 ?>
 
 
@@ -80,7 +81,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!--================Home Banner Area =================-->
         <section class="home_banner_area">
             <div class="banner_inner d-flex align-items-center">
-            	<div id="COVER_HEADER" class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background="" style="background: no-repeat scroll center center;"></div>
+            	<div id="COVER_HEADER" class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background="" style="background: no-repeat scroll center center; background-image: url('/img/banner/home-banner.jpg')"></div>
 				<div class="container">
 					<div class="banner_content text-center">
 							
@@ -133,7 +134,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         		<div class="gallery_f_inner row imageGallery1">
         			<div class="col-lg-3 col-md-4 col-sm-6 ap">
         				<div class="h_gallery_item">
-        					<img src="" alt="" id="ARTIFACT">
+        					<img src="/img/gallery/gallery-1.jpg" alt="" id="ARTIFACT">
         					<div class="hover">
         						<a href="#"><h4>Artifact</h4></a>
         						<a class="light" href="" id="ARTIFACT_LIGHT"><i class="fa fa-expand"></i></a>
@@ -142,7 +143,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         			<div class="col-lg-3 col-md-4 col-sm-6 unv">
         				<div class="h_gallery_item">
-        					<img src="" alt="" id="BUILDING">
+        					<img src="/img/gallery/gallery-2.jpg" alt="" id="BUILDING">
         					<div class="hover">
         						<a href="#"><h4>Building</h4></a>
         						<a class="light" href="" id="BUILDING_LIGHT"><i class="fa fa-expand"></i></a>
@@ -151,7 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         			<div class="col-lg-3 col-md-4 col-sm-6 unp ap">
         				<div class="h_gallery_item">
-        					<img src="" alt="" id="ART">
+        					<img src="/img/gallery/gallery-3.jpg" alt="" id="ART">
         					<div class="hover">
         						<a href="#"><h4>Art and Sculpture</h4></a>
         						<a class="light" href="" id="ART_LIGHT"><i class="fa fa-expand"></i></a>
@@ -160,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         			<div class="col-lg-3 col-md-4 col-sm-6 unp">
         				<div class="h_gallery_item" >
-        					<img src="" alt="" id="LONG_EXPOSURE">
+        					<img src="/img/gallery/gallery-4.jpg" alt="" id="LONG_EXPOSURE">
         					<div class="hover">
         						<a href="#"><h4>Long Exposure</h4></a>
         						<a class="light" href="" id="LONG_EXPOSURE_LIGHT"><i class="fa fa-expand"></i></a>
@@ -169,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         			<div class="col-lg-3 col-md-4 col-sm-6 unv">
         				<div class="h_gallery_item">
-        					<img src="" alt="" id="STREET">
+        					<img src="/img/gallery/gallery-5.jpg" alt="" id="STREET">
         					<div class="hover">
         						<a href="#"><h4>Streets</h4></a>
         						<a class="light" href="" id="STREET_LIGHT"><i class="fa fa-expand"></i></a>
@@ -178,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         			<div class="col-lg-3 col-md-4 col-sm-6 ap">
         				<div class="h_gallery_item">
-        					<img src="" alt="" id="ROAD">
+        					<img src="/img/gallery/gallery-6.jpg" alt="" id="ROAD">
         					<div class="hover">
         						<a href="#"><h4>Roads</h4></a>
         						<a class="light" href="" id="ROAD_LIGHT"><i class="fa fa-expand"></i></a>
@@ -187,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         			<div class="col-lg-3 col-md-4 col-sm-6 unp">
         				<div class="h_gallery_item">
-        					<img src="" alt="" id="NATURE">
+        					<img src="/img/gallery/gallery-7.jpg" alt="" id="NATURE">
         					<div class="hover">
         						<a href="#"><h4>Pure Nature</h4></a>
         						<a class="light" href="" id="NATURE_LIGHT"><i class="fa fa-expand"></i></a>
@@ -196,7 +197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			</div>
         			<div class="col-lg-3 col-md-4 col-sm-6 unp">
         				<div class="h_gallery_item">
-        					<img src="" alt="" id="TRAVEL">
+        					<img src="/img/gallery/gallery-8.jpg" alt="" id="TRAVEL">
         					<div class="hover">
         						<a href="#"><h4>Travel</h4></a>
         						<a class="light" href="" id="TRAVEL_LIGHT"><i class="fa fa-expand"></i></a>
@@ -397,10 +398,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
     var host = '<?php echo HOST ?>';
-    $(document).ready(function(){
-        
-        getImageContent();
-    });
+  
 
 </script>
 

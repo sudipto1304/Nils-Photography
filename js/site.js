@@ -27,29 +27,5 @@ function sendEmail(){
 }
 
 function getImageContent(){
-    $.ajax({
-        type: "GET",
-        url: host+"/data/image/getContent",
-        contentType: false,
-        processData: false,
-        cache: false,
-        timeout: 600000,
-        success: function (data) {
-            var form = '';
-            for(var i=0; i<data.length; i++){
-                if(data[i]["category"]=="COVER_HEADER"){
-                    $('#COVER_HEADER').css('background-image', 'url(' + data[i]["images"][0]['url'] + ')');
-                }else{
-                    $('#'+data[i]["category"]).attr('src', data[i]["images"][0]['url']);
-                    $('#'+data[i]["category"]+"_LIGHT").attr('href', data[i]["images"][0]['url']);
-                }
-            }            
-            
-        },
-        error: function (e) {
-            console.log("ERROR : ", e);
-            
-
-        }
-    });
+   
 }
