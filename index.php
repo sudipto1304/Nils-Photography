@@ -1,16 +1,3 @@
-<?php
-require_once($_SERVER['DOCUMENT_ROOT']."/service/ImportInsta.php"); 
-require_once($_SERVER['DOCUMENT_ROOT']."/service/LoadContent.php"); 
-/*if (empty($_POST)){
-    header("Location: index.php");
-    die();
-}*/
-$import = new ImportInstagramProfile();
-$data=json_decode($import->getInstagramPics());
-
-?>
-
-
 <!doctype html>
 <html lang="en">
     <head>
@@ -42,9 +29,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <title>Nils Photography</title>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css?rev=001" as="style">
-    
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css?rev=001" as="style">
-        <link rel="stylesheet" href="css/style.css?rev=001" as="style">
+        
+		<link rel="stylesheet" href="css/style.css?rev=001" as="style">
         <link rel="stylesheet" href="css/responsive.css?rev=001" as="style">
     </head>
     <body>
@@ -85,7 +72,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="container">
 					<div class="banner_content text-center">
 							
-						<p>I’m a Canon camera lover. But my specialty is 35mm film photography. I love to capture street events, natual beauty. Photography has taken me those places I never thought I'd go. 
+						<p>I'm a Photographer, Cinematographer and Youtuber. I love to create short B-Roll sequence on anything. Canon and DJI!! Woooooo my favourite.
 							</p>
 						
 						<h1 style="float: right; margin-bottom: 10px;"> <img src="img/signature.png?rev=001"/></h1>
@@ -104,9 +91,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			<div class="col-lg-12">
         				<div class="c_feedback_text">
         					<h4>ABOUT</h4>
-							<p>I'm a part time professional photographer and cinematographer. I started my career as a photographer back in 2013 when I was in Kolkata, India. Mainly I started with wedding and event photography.</p><br/>
-							<p>Due to my another professional requirement (guess what!!) I came to The USA on 2016. But I never quit my photography passion and started to click street and nature. Now days I used to organize photography exhibitions of my photographs. I participate on global events and exhibitions. I work as a freelance photographer for product shoot as well.</p><br/>
-							<p>I’m a Canon camera lover. I used Canon 5D Mark III for my digital photographs. But my specialty is 35mm film photography. </p>
+							<p>I'm a Photographer, Cinematographer and Youtuber. I used to shoot wedding, events, parties along with commercials film for my earning.</p><br/>
+							<p>For creativity I love to shoot B-Roll, people, nature, night life. I create my own and uniqe camera equipment for creative camera movement and unique motion. Follow my instagram account to know more about my work.</p><br/>
+							<p>I’m a Canon camera lover. I use Canon 5D Mark III for my digital photographs. All my lenses are mostly Canon lens. Follow my youtube channel to know more about my camera gears.</p>
         				</div>
         			</div>
         			
@@ -324,12 +311,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         			<a class="btn theme_btn" href="https://www.instagram.com/nilexposure" target="_blank">Follow me on instagram</a>
         		</div>
         		<div class="instagram_image row m0">
-				<?php
-						foreach($data as $post){
-							echo '<div class="adjustdiv"><a href='.$post->postLink.' target="_blank"><img src='.$post->imageLink.' class="adjust"></a></div>';
-						}
-						
-					?>
         		</div>
         	</div>
         </section>
@@ -372,6 +353,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         					<ul class="list">
         						<li><a href="https://www.facebook.com/nilsphotographystudio" target="_blank"><i style="color:white;" class="fa fa-facebook-official"></i></a></li>
         						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.instagram.com/nilsexposure/"><i class="fa fa-instagram"></i></a></li>
         					</ul>
         				</aside>
         			</div>
@@ -397,7 +379,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </body>
 
 <script>
-    var host = '<?php echo HOST ?>';
+    $(document).ready(function(){
+		getImageContent();
+	});
   
 
 </script>

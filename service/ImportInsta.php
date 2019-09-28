@@ -1,6 +1,11 @@
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/service/Post.php"); 
 
+
+$import = new ImportInstagramProfile();
+echo $import->getInstagramPics();
+
+
 //$a = new ImportInstagramProfile();
 
 //$a->getInstagramPics();

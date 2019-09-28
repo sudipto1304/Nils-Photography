@@ -27,5 +27,25 @@ function sendEmail(){
 }
 
 function getImageContent(){
-   
+    var html="";
+    $.ajax({
+        type: "GET",
+        url: "../service/ImportInsta.php",
+        contentType: false,
+        processData: false,
+        cache: false,
+        timeout: 600000,
+        success: function (data) {
+            var json = $.parseJSON(data);
+            $.each(json , function(i, val){
+                console.log(i+"---"+val.postLink+"----"+val.imageLink);
+                html+='<div class="adjustdiv"><a href='+val.postLink+'target="_blank"><img src='+val.imageLink+' class="adjust"></a></div>'
+            });
+            
+            $(".instagram_image").html(html);
+        },
+        error: function (e) {
+            console.log("ERROR : ", e);
+        }
+    });
 }
