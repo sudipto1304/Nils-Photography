@@ -364,16 +364,17 @@ ga('send', 'pageview');
 		<script rel="preload" src="js/site.js?rev=001"></script>
         <script rel="preload" src="js/jquery.ajaxchimp.min.js?rev=001"></script>
         <script rel="preload" src="js/mail-script.js?rev=001"></script>
-        
-    </body>
-
-<script>
-    $(document).ready(function(){
-		getImageContent();
-	});
+        <script>
+				$(document).ready(function(){
+					console.log("document ready");
+					getImageContent();
+				});
   
 
-</script>
+		</script>
+    </body>
+
+
 
 
 </html>
