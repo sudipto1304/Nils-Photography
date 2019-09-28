@@ -41,7 +41,7 @@ function getImageContent(){
             var json = $.parseJSON(data);
             $.each(json , function(i, val){
                 
-                html+='<div class="adjustdiv"><a href='+val.postLink+'target="_blank"><img src='+val.imageLink+' class="adjust"></a></div>'
+                html+='<div class="adjustdiv"><a href='+val.postLink+' target="_blank"><img src='+val.imageLink+' class="adjust"></a></div>'
             });
             
             $(".instagram_image").html(html);
