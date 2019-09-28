@@ -15,15 +15,7 @@
 	function gallery_isotope(){
         if ( $('.gallery_f_inner').length ){
             // Activate isotope in container
-			$(".gallery_f_inner").imagesLoaded( function() {
-                $(".gallery_f_inner").isotope({
-                    layoutMode: 'fitRows',
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear'
-                    }
-                }); 
-            });
+		
 			
             // Add isotope click function
             $(".gallery_filter li").on('click',function(){
@@ -94,7 +86,7 @@
     }
     mailChimp();
 	
-	$('select').niceSelect();
+	
 	
 	/*----------------------------------------------------*/
     /*  Simple LightBox js
