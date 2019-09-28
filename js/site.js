@@ -28,6 +28,7 @@ function sendEmail(){
 
 function getImageContent(){
     var html="";
+    console.log("getImageContent called");
     $.ajax({
         type: "GET",
         url: "../service/ImportInsta.php",
@@ -36,9 +37,10 @@ function getImageContent(){
         cache: false,
         timeout: 600000,
         success: function (data) {
+            console.log("data received");
             var json = $.parseJSON(data);
             $.each(json , function(i, val){
-                console.log(i+"---"+val.postLink+"----"+val.imageLink);
+                
                 html+='<div class="adjustdiv"><a href='+val.postLink+'target="_blank"><img src='+val.imageLink+' class="adjust"></a></div>'
             });
             
