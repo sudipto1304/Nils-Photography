@@ -81,7 +81,7 @@ ga('send', 'pageview');
         				<div class="c_feedback_text">
         					<h4>ABOUT</h4>
 							<p>I'm a Photographer, Cinematographer and Youtuber. I used to shoot wedding, events, parties along with commercials film for my earning.</p><br/>
-							<p>For creativity I love to shoot B-Roll, people, nature, night life. I create my own and uniqe camera equipment for creative camera movement and unique motion. Follow my instagram account to know more about my work.</p><br/>
+							<p>For creativity I love to shoot B-Roll, people, nature, night life. I create my own and unique camera equipment for creative camera movement and unique motion. Follow my instagram account to know more about my work.</p><br/>
 							<p>I’m a Canon camera lover. I use Canon 5D Mark III for my digital photographs. All my lenses are mostly Canon lens. Follow my youtube channel to know more about my camera gears.</p>
         				</div>
         			</div>
